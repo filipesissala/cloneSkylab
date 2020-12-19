@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #121214;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    background-color: #211f24;
+    width: 100%;
+    max-width: 1366px;
+    z-index: 1000;
+    box-shadow: rgb(18, 18, 20) 0px 1rem 2rem;
+}
+
+header nav.menu {
+    display: flex;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+header nav.menu .left {
+    width: 50%;
+    height: 46px;
+    padding-left: 30px;
+}
+
+header nav.menu .left svg {
+    margin: 5px auto;
+}
+
+header nav.menu .right {
+    display: flex;
+    width: 50%;
+    height: 46px;
+    padding-right: 30px;
+}
+
+header nav.menu .right .search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 366px;
+    max-height: 46px;
+}
+
+header nav.menu .right .search a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+}
+
+header nav.menu .right .search input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #2a282e;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    background-color: #121214;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: 0;
+    position: absolute;
+    cursor: default;
+}
+
+header nav.menu .right button {
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 10px;
+    width: 46px;
+    height: 46px;
+    border-radius: 5px;
+    transition: background 0.2s ease 0s;
+    border: none;
+}
+
+header nav.menu .right button a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+header nav.menu .right .search a:hover {
+    background-color: #121214;
+    border-radius: 5px;
+}
+
+header nav.menu .right button:hover {
+    background-color: #121214;
+}
+
+header nav.menu .right .content_profile {
+    display: flex;
+}
+
+header nav.menu .right .content_profile span {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(225, 225, 230);
+    transition: color 0.2s ease 0s;
+    margin: 16px 10px 0 10px;
+}
+
+header nav.menu .right .content_profile img {
+    border-radius: 50%;
+    border: solid 2px white;
+    width: 45px;
+    height: 45px;
+}
+
+div.wrapper {
+    display: flex;
+    margin-top: 90px;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+div.wrapper .cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 16px 0 16px;
+}
+
+div.wrapper .cards .card {
+    width: 290px;
+    margin-right: 15px;
+    text-align: center;
+    border-radius: 8px 8px 0px 0px;
+    background-color: #211f24;
+    padding: 64px;
+}
+
+div.wrapper .cards .card.lilac {
+    border-bottom: solid 2px #9c00e6;
+}
+
+div.wrapper .cards .card.green {
+    border-bottom: solid 2px #00e764;
+}
+
+div.wrapper .cards .card.yellow {
+    border-bottom: solid 2px #d5b448;
+}
+
+div.wrapper .cards .card p {
+    max-width: 270px;
+    text-align: center;
+    color: rgb(135, 134, 139);
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 20px;
+    height: 260px;
+}
+
+div.wrapper .cards .card a {
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 20px;
+    background: rgb(4, 211, 97);
+    color: rgb(34, 34, 34);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    align-self: center;
+}
+
+div.wrapper .cards .card .content {
+    margin-top: 30px;
+}
+
+div.wrapper .cards .card .content .expert {
+    margin: 30px 0;
+    height: 145px;
+}
+
+div.wrapper .cards .card .content .expert svg {
+    margin: 7vh auto;
+}
